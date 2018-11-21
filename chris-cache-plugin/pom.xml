@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.chris.project</groupId>
+    <artifactId>chris-cache-plugin</artifactId>
+    <version>1.1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <aspectjtools.version>1.8.13</aspectjtools.version>
+        <spring-boot.version>1.5.13.RELEASE</spring-boot.version>
+        <lombok.version>1.16.20</lombok.version>
+        <jedis.version>2.9.0</jedis.version>
+        <slf4j-api.version>1.7.25</slf4j-api.version>
+        <fastjson.version>1.2.45</fastjson.version>
+        <chris-base-common.version>1.1.0-SNAPSHOT</chris-base-common.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.chris.project</groupId>
+            <artifactId>chris-base-common</artifactId>
+            <version>${chris-base-common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjtools</artifactId>
+            <version>${aspectjtools.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
